@@ -1,11 +1,24 @@
-words = ["donkey", "mouse", "stuupid", "criminal", "mad", "bad", "coward", "elephant", "cat"]
+from random import randint
 
-with open("prince.txt", "r") as f:
-    content = f.read()
+class Train:
 
-for word in words:
-    content = content.replace(word, "#" * len(words))
+    def __init__(self, trainno):
+        self.trainno = trainno
 
-with open("prince.txt", "w") as f:
-    f.write(content)
-    
+
+    def book(self,  fro , to):
+        print(f"Ticket is booked in train no :{self.trainno} from {fro} to {to}")
+        
+
+    def getStatus(self ):
+        print(f"Train no: {self.trainno} is running on time")
+        
+
+    def getFare(self,  fro, to):
+        print(f"Ticket fare in train no: {self.trainno} form {fro} to {to} is {randint(222, 5555)}")
+
+
+t = Train(123389)
+t.book("Rampur", "Delhi")
+t.getStatus()
+t.getFare( "Rampur", "Delhi")
