@@ -1,5 +1,4 @@
-a = int(input("Enter a number: "))
+table = [str(7*i) for i in range(1, 11)]
 
-table = [a*i for  i in range(1, 11)] 
-
-print(table)
+s = "\n".join(table)
+print(s)

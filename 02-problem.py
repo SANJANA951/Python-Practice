@@ -1,5 +1,6 @@
-l = [1, 3, 6, 8, 5, 3, 2, 6]
+a = input("Enter your name: ")
+b = int(input("Enter your marks: "))
+c = int(input("Enter your number: "))
 
-for i, item in enumerate(l):
-    if i == 2 or i == 4 or i == 6:
-        print(item)
+l = "The name of the student is {0} his marks are {1} and phone number is {2}".format(a,b,c)
+print(l)
