@@ -1,3 +1,4 @@
+# Write a program fro making T0-D0-List
 import tkinter as tk
 
 root = tk.Tk()
